@@ -1,9 +1,12 @@
 import React from 'react';
+import Home from './Pages/Home';
+import NavBar from './Components/Navbar.js';
 
 function App() {
   return (
     <div className="App">
-      Hello World!
+      <NavBar />
+      <Home />
     </div>
   );
 }
