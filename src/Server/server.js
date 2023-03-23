@@ -30,3 +30,5 @@ router.get("/about", function (req, res) {
 app.listen(PORT, () => console.log("App is listening on port 3000"));
 
 module.exports = router;
+
+//TODO CALLL TO API AND THEN RENDER ON CLIENT SIDE
