@@ -1,6 +1,6 @@
 import React from "react";
 
-class Video extends React.Component {
+class WebCam extends React.Component {
   constructor(props) {
     super(props);
     this.streamCamVideo = this.streamCamVideo.bind(this);
@@ -34,4 +34,4 @@ class Video extends React.Component {
   }
 }
 
-export default Video;
+export default WebCam;

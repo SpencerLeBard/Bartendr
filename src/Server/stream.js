@@ -29,7 +29,8 @@ app.get("/video", function (req, res) {
 });
 
 app.listen(8080, function () {
-  console.log("Listening on port 8000!");
+  console.log("Listening on port 8080!");
 });
 
-//NOTE nodemon ./src/Server/videoFunctions.js
+//NOTE nodemon ./src/Server/stream.js
+//TODO For streaming multiple videos, you can modify the /video endpoint function to handle multiple videos using an array of video paths, and then use a loop to stream each video one after the other.

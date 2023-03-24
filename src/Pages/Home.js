@@ -8,8 +8,8 @@ class Home extends React.Component {
         <Cam />
         <title>Video Streaming With Node</title>
         <body>
-          <video id="videoPlayer" width="25%" controls muted="muted" autoplay>
-            <source src="/video" type="video/mp4" />
+          <video id="videoPlayer" controls>
+            <source src="http://localhost:8000/video" type="video/mp4" />
           </video>
         </body>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Video from "./Video";
+import WebCam from "./WebCam";
 
 class Cam extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Cam extends React.Component {
           <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
             <h1>Bittercreek Cam 1</h1>
             <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-              <Video />
+              <WebCam />
             </div>
           </div>
         </div>
