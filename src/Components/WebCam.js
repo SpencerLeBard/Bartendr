@@ -19,7 +19,7 @@ class WebCam extends React.Component {
       })
       .catch(function (err) {
         console.log(err.name + ": " + err.message);
-      }); // always check for errors at the end.
+      });
   }
   render() {
     return (
