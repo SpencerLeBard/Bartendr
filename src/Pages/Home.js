@@ -3,7 +3,7 @@ import Cam from "../Components/Cam";
 // import video from "../Assets/1.mp4";
 
 class Home extends React.Component {
-  //TODO PROBABLY GOING TO HAVE TO DO CONSTRUCTOR PROPS HERE
+  //TODO PROBABLY GOING TO HAVE TO DO CONSTRUCTOR PROPS HERE BASED ON ID OF VIDEO
 
   render() {
     return (
