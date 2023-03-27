@@ -3,6 +3,17 @@ const fs = require("fs");
 const app = express();
 const PATH = "./src/Assets/one.mp4";
 
+// app.use(express.urlencoded());
+
+// app.post("/auth", function (req, res) {
+//   const streamkey = req.body.key;
+//   if (streamkey === "supersecret") {
+//     res.status(200).send("OK");
+//     return;
+//   }
+//   res.status(403).send("Forbidden");
+// });
+
 app.get("/video", function (req, res) {
   console.log(req);
   const range = req.headers.range;
@@ -26,6 +37,8 @@ app.get("/video", function (req, res) {
   videoStream.pipe(res);
 });
 
-app.listen(8080, function () {
-  console.log("Listening on port 8080!");
+app.listen(8000, function () {
+  console.log("Listening on port 8000!");
 });
+
+// nodemon ./src/Server/server.js
