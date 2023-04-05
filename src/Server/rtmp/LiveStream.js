@@ -1,27 +1,16 @@
-import React, { Component } from "react";
-import Hls from "hls.js";
+import React from "react";
+import VLCPlayer from "react-native-vlc-player";
 
-class LiveStream extends Component {
-  videoRef = React.createRef();
-
-  componentDidMount() {
-    const { current: video } = this.videoRef;
-
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource("/hls/test.m3u8");
-      hls.attachMedia(video);
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = "/hls/test.m3u8";
-    }
-  }
-
+class LiveStream extends React.Component {
   render() {
     return (
-      <div>
-        <h2>Live Stream</h2>
-        <video id="video" width="800" controls ref={this.videoRef}></video>
-      </div>
+      <VLCPlayer
+        autoplay
+        url="rtmp://localhost:1935/live"
+        playerOptions={{
+          VLC_ARGS: "--no-video-title-show",
+        }}
+      />
     );
   }
 }
