@@ -1,10 +1,12 @@
 FROM node:12
-# WORKDIR /
+# WORKDIR /src/Auth
 COPY package*.json ./
 
 RUN npm install
 COPY authServer.js ./
-CMD ["npm", "start"]
+CMD ["nodemon", "./src/Auth/authServer.js"]
 
-# nodemon ./src/Server/rtmp/Auth/authServer.js
+# nodemon src/Auth/authServer.js
+
+
 
